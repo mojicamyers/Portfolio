@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+    background-color: #DEDEDE
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+    
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 10%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+<body>
+<!--<div style="left: 735px; top: 32px; position: absolute; text-align: center; color: black; font-size: 50px; font-family: Kohinoor Bangla; font-weight: 700; word-wrap: break-word">Ana Mojica Myers</div>
+    <div style="left: 588px; top: 103px; position: absolute; text-align: center; color: black; font-size: 30px; font-family: Kohinoor Bangla; font-weight: 275; word-wrap: break-word">Cartographer • Storyteller • Researcher • Instructor</div>-->
+<!--<h2 style="text-align:center">Slideshow Gallery</h2>-->
+    <h2 style="text-align:center; font-family: Kohinoor Bangla; font-size: 50px;">Ana Mojica Myers</h2>
+    <p style="text-align: center; color: black; font-size: 30px; font-family: Kohinoor Bangla; font-weight: 275; word-wrap: break-word">Cartographer • Storyteller • Researcher • Instructor</p>
+    <!--<p style="text-align:center; color: black; font-size: 50px; font-family: Kohinoor Bangla; font-weight: 700; word-wrap: break-word">Ana Mojica Myers </p> <p style="text-align: center; color: black; font-size: 30px; font-family: Kohinoor Bangla; font-weight: 275; word-wrap: break-word">Cartographer • Storyteller • Researcher • Instructor</p>-->
+<!-- Pictures container right below-->
+   
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 10</div>
+    <img src="Index_images/Lahar visualization, Nejapa, El Salvador - 2006.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 10</div>
+    <img src="Index_images/Multiple_Scenario_Interface_for_Visualizing_Urban Structures_The_Cases_of_the_Salvadoran_Cities_of San_Salvador_and_Santa_Tecla_3.PNG" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 10</div>
+    <img src="Index_images/Time Line, Published in Sistematización del Proyecto_ Construcción Participativa de Estrategias, Geólogos del Mundo, San Salvador, 2011_.jpeg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 10</div>
+    <img src="Index_images/Visual summary_ Published in_ Guia para la construcción participativa de estrategias para la gestión de riesgos en la Microrregión _Melida Anaya Montes__ Sistematización del Proyecto_ Construcción Participativa de Estrategias, Geólog.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 10</div>
+    <img src="Index_images/Malaysia_Uhl_MyersF1500px_01.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 10</div>
+    <img src="Index_images/M01_001.png" style="width:100%">
+  </div>
+    
+    <div class="mySlides">
+    <div class="numbertext">7 / 10</div>
+    <img src="Index_images/Hastie_Map4_Serif_1500px.png" style="width:100%">
+  </div>
+    
+    <div class="mySlides">
+    <div class="numbertext">8 / 10</div>
+    <img src="Index_images/JonahShahid.PNG" style="width:100%">
+  </div>
+    
+    <div class="mySlides">
+    <div class="numbertext">9 / 10</div>
+    <img src="Index_images/2_PH_Mega_storms_Poster_V.PNG" style="width:100%">
+  </div>
+    
+    <div class="mySlides">
+    <div class="numbertext">10 / 10</div>
+    <img src="Index_images/SEO Food Finder.PNG" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+<!-- caption and picture comments container right below-->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="Index_images/Lahar visualization, Nejapa, El Salvador - 2006.jpeg" style="width:100%" onclick="currentSlide(1)" alt="Lahar Visualization for Nejapa,<br/>El Salvador<br/>September 2006.<br/>Best Animated/Interactive Map<br/>in North American Cartographic<br/>Information Society (NACIS)<br/>Animated Map Student<br/>Competition, 2006<br/><br/>David Woodward Award<br/>for Best Electronic Map<br/>34th annual competition<br/>of the American Congress<br/>on Surveying and Cartography<br/>and Geographic Information <br/>Society (CaGIS), 2006<br /> Check a demo by clicking in the image">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Index_images/Multiple_Scenario_Interface_for_Visualizing_Urban Structures_The_Cases_of_the_Salvadoran_Cities_of San_Salvador_and_Santa_Tecla_3.PNG" style="width:100%" onclick="currentSlide(2)" alt="Multiple Scenario Interface<br/>for Visualizing Urban Structures:<br/>The Cases of the Salvadoran Cities<br/>of San Salvador and Santa Tecla<br/>January 2009">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Index_images/Time Line, Published in Sistematización del Proyecto_ Construcción Participativa de Estrategias, Geólogos del Mundo, San Salvador, 2011_.jpeg" style="width:100%" onclick="currentSlide(3)" alt="Timeline for a systematization<br/>of a project published in<br/>Construcción Participativa de<br/>Estrategias, Geólogos del Mundo,<br/>San Salvador, 2011">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Index_images/Visual summary_ Published in_ Guia para la construcción participativa de estrategias para la gestión de riesgos en la Microrregión _Melida Anaya Montes__ Sistematización del Proyecto_ Construcción Participativa de Estrategias, Geólog.jpeg" style="width:100%" onclick="currentSlide(4)" alt="Visual summary. Published in:<br/>Guia para la construcción participativa de estrategias<br/>para la gestión de riesgos<br/>en la Microrregión Melida Anaya<br/>Montes Sistematización del Proyecto: Construcción<br/>Participativa de Estrategias,<br/>Geólogos del Mundo<br/>San Salvador, 2011.">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Index_images/Malaysia_Uhl_MyersF1500px_01.jpg" style="width:100%" onclick="currentSlide(5)" alt="Reference maps for Borderlands, Peninsular Malaysia<br/>Published in: Postcards from the Borderlands<br/>Author: David Mould<br/>Open Books, 2020<br/>Ana Mojica Myers, Benjamin<br/>Bryan, Ana Stover, and Hunter Uhl">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="Index_images/M01_001.png" style="width:100%" onclick="currentSlide(6)" alt="Reference and thematic maps for Latin America and the Caribbean, the American<br/>continent. Published in: Latin America and the Caribbean:<br/>An environment and<br/>Development Approach<br/>Author: Brad Jokisch<br/>Rowman & Littlefield Publishers, 2023">
+    </div>
+      <div class="column">
+      <img class="demo cursor" src="Index_images/Hastie_Map4_Serif_1500px.png" style="width:100%" onclick="currentSlide(7)" alt="Thematic maps for historical book,<br/>Radama’s exploratory mission in 1823 <br/>Published in: Mission to Madagascar:<br/>The Sergeant, the King, and the Slave <br/>Trade<br/>Author: David Mould<br/>Blackwater Press, 2023.">
+    </div>
+      <div class="column">
+      <img class="demo cursor" src="Index_images/JonahShahid.PNG" style="width:100%" onclick="currentSlide(8)" alt="Mountaintop Removal Mining: Effect on Cancer Rate<br/>Johan Shahid, GEOG 3610 class project,<br/>Geography Department,<br/>Ohio Unversity<br/>Fall 2019">
+    </div>
+      <div class="column">
+      <img class="demo cursor" src="Index_images/2_PH_Mega_storms_Poster_V.PNG" style="width:100%" onclick="currentSlide(9)" alt="Visualizing the Tropical Storms<br/>in the Philippines (1884 – 2019)<br/>Adonis Durado, a Thesis Project, <br/>Master of Fine Arts in Communication Media Arts, Ohio University<br/>Spring 2020">
+    </div>
+      <div class="column">
+      <img class="demo cursor" src="Index_images/SEO Food Finder.PNG" style="width:100%" onclick="currentSlide(10)" alt="SEO Food Finder<br/>Program to Aid Career Exploration (PACE)<br/>Brandon Carpenter (2019-2020), Ben Edgington (2022), Mira<br/>Parsons (2022 - 2023),<br/>and Morgan Snyder (2024 - present)<br/>In progress">
+    </div>
+  </div>
+</div>
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+</body>
+</html>
